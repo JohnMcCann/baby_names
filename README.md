@@ -1,0 +1,16 @@
+# baby names
+  
+A small project to analysis baby names in the United States of America. The project aims to look at naming trends in the US and assess how popular a name was and is.
+
+# notebook
+
+Refer to the babyname tutorial jupyter-notebook for a user-friendly walk through. Complete with plotting tools to make nice looking plots.
+
+![Top 10 Female Names Since 2000](https://github.com/JohnMcCann/baby_names/wiki/images/Female_top10_2000.png)
+
+# congratulations
+
+If you're looking at this repo you more than likely have one on the way. My sincerest congratulations to you.
+
+# Similar project:
+- https://github.com/TimeMagazineLabs/babynames
