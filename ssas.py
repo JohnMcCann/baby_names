@@ -10,6 +10,7 @@ import pandas as pd
 from zipfile import ZipFile
 from bs4 import BeautifulSoup
 
+
 # Vanity dictionary for converting SSA table headers
 _my_header_dict = {
     'Year of birth': 'year',
