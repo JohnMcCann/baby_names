@@ -21,7 +21,7 @@ def history_plot(ax, names, genders, df, plot_type='f', log_scale=True,
     Arguments:
         ax: ax that is plotted to
         names: list of names to plot data for
-        genders: list of gender of name (must match len of names)
+        genders: list of gender of name (if str or len=1, assumes single gender)
         df: dataframe from which data is extracted from
         
     Keyword arguments:
@@ -37,6 +37,16 @@ def history_plot(ax, names, genders, df, plot_type='f', log_scale=True,
         Nothing
     """
     # ERROR check
+    if not isinstance(df, pd.DataFrame):
+        print('ERROR: 4th argument must be a pandas dataframe.')
+        return
+    if type(genders) is str:
+        genders = [genders]*len(names)
+    elif len(genders) == 1:
+        genders = genders*len(names)
+    elif len(genders) != len(names):
+        print('ERROR: len(genders) match len(names) or be length one.')
+        return
     if len(names) > len(cc)*len(markers):
         print('WARNNING: Number of names exceed unquie identifiers.')
     # Make plot
